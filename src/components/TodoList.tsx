@@ -19,7 +19,7 @@ export const TodoList = (props: TodoListTypeProps) => {
             <TodoListItem id={item.id} title={item.title} isDone={item.isDone}/>
         )
     })
-
+8
     return (
         <div>
             <h3>{props.title}</h3>
