@@ -1,4 +1,5 @@
 import React from "react";
+import {TodoListItem} from "./TodoListItem";
 
 type TasksType = {
     id: number
@@ -13,7 +14,7 @@ type TodoListTypeProps = {
 
 export const TodoList = (props: TodoListTypeProps) => {
 
-    const elenents = props.tasks.map(item => {
+    const elements = props.tasks.map(item => {
         return (
             <TodoListItem id={item.id} title={item.title} isDone={item.isDone}/>
         )
@@ -22,24 +23,19 @@ export const TodoList = (props: TodoListTypeProps) => {
     return (
         <div>
             <h3>{props.title}</h3>
-
-            <div>
-                {elenents}
-            </div>
             <div>
                 <input/>
                 <button>+</button>
             </div>
-            <ul>
-                <li><input type="checkbox" checked={true}/> <span>HTML&CSS</span></li>
-                <li><input type="checkbox" checked={true}/> <span>JS</span></li>
-                <li><input type="checkbox" checked={false}/> <span>React</span></li>
-            </ul>
+            <div>
+                {elements}
+            </div>
             <div>
                 <button>All</button>
                 <button>Active</button>
                 <button>Completed</button>
             </div>
+
         </div>
     )
 }
