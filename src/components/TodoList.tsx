@@ -30,7 +30,7 @@ export const TodoList = (props: TodoListTypeProps) => {
                 <input/>
                 <button>+</button>
             </div>
-            <ul>
+            <ul>/// Перенести в лист айтем
                 <li><input type="checkbox" checked={true}/> <span>HTML&CSS</span></li>
                 <li><input type="checkbox" checked={true}/> <span>JS</span></li>
                 <li><input type="checkbox" checked={false}/> <span>React</span></li>
