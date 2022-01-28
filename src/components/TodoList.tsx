@@ -35,7 +35,6 @@ export const TodoList = (props: TodoListTypeProps) => {
                 <button>Active</button>
                 <button>Completed</button>
             </div>
-
         </div>
     )
 }
