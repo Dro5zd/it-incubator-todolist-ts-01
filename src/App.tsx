@@ -21,7 +21,7 @@ function App() {
         {id: 2, title: "Happy", isDone: false},
         {id: 3, title: "My heart will go on", isDone: false}
     ]
-
+2
     return (
         <div className="App">
             <TodoList title="What to do???" tasks={tasks1}/>
