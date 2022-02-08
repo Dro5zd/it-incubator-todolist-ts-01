@@ -10,16 +10,12 @@ function App() {
         {id: 3, title: "ReactJS", isDone: false},
     ]
 
-    const removeTask = () => {
-        console.log('uhujhuj')
-    }
 
     return (
         <div className="App">
             <Todolist
                 title="What to learn"
                 tasks={tasks1}
-                removeTask={removeTask}
             />
         </div>
     );
